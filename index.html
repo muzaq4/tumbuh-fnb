@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#123c32">
+  <meta name="description" content="TUMBUH F&B — kasir dan pengendali usaha UMKM makanan dan minuman.">
+  <title>TUMBUH F&B</title>
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="icon" href="./icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand-mark">T</div>
+        <div>
+          <div class="brand-name">TUMBUH <span>F&amp;B</span></div>
+          <div class="brand-subtitle">Kasir & kesehatan usaha</div>
+        </div>
+      </div>
+      <div class="top-actions">
+        <span id="connection-status" class="connection-pill"><i></i> Memeriksa...</span>
+        <button class="icon-button" type="button" data-action="go-settings" aria-label="Pengaturan" title="Pengaturan">⚙</button>
+      </div>
+    </header>
+
+    <main id="app" class="main-content" aria-live="polite">
+      <div class="loading-card">Menyiapkan ruang usaha...</div>
+    </main>
+
+    <nav class="bottom-nav" aria-label="Navigasi utama">
+      <button type="button" data-page="dashboard" class="nav-item active"><span>⌂</span><small>Ringkasan</small></button>
+      <button type="button" data-page="cashier" class="nav-item"><span>▣</span><small>Kasir</small></button>
+      <button type="button" data-page="products" class="nav-item"><span>◫</span><small>Produk</small></button>
+      <button type="button" data-page="stock" class="nav-item"><span>▤</span><small>Stok</small></button>
+      <button type="button" data-page="reports" class="nav-item"><span>▥</span><small>Laporan</small></button>
+    </nav>
+  </div>
+  <div id="toast-region" class="toast-region" aria-live="assertive"></div>
+  <script src="./app.js" defer></script>
+</body>
+</html>
